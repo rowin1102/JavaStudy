@@ -10,14 +10,14 @@ public class Main {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		String[] input = br.readLine().split(" ");
-		int strLength = input.length;
+		String str = br.readLine().trim();
 		
-		if(input[0] == " ") {
-			strLength -= 1;
+		if(str.isEmpty()) {
+			System.out.println(123);
+		} else {
+			String[] input = str.split("\\s+");
+			System.out.println(input.length);
 		}
-		
-		System.out.println(strLength);
 		
 	}
 	

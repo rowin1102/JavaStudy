@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import common.Student;
 
+
 public class Ex03ArrayList2 {
 	
 	public static void main(String[] args) {
@@ -36,8 +37,12 @@ public class Ex03ArrayList2 {
 		 	일반 for문 사용을 위해 size() 메서드로 추가된 인스턴스의 갯수를 반환받을 수 있다.
 		 	인덱스로 접근해야 하므로 get()메서드를 사용한다.
 		*/
-		for(int i=0; i<list2.size(); i++) {
-			System.out.println(list2.get(i));
+//		for(int i=0; i<list2.size(); i++) {
+//			System.out.println(list2.get(i));
+//		}
+		
+		for(Student st : list2) {
+			System.out.println(st);
 		}
 		
 		/*
@@ -95,6 +100,7 @@ public class Ex03ArrayList2 {
 			System.out.println(st);
 		}
 		
+		sc.close();
 	}
 	
 }

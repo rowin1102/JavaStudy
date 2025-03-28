@@ -87,7 +87,7 @@ public class Ex03ArrayList1 {
 		 	수정하기(덮어쓰기) : 기존의 내용을 변경한다.
 		 		즉, 기존의 내용은 삭제 후 새로운 내용을 갱신한다.
 		*/
-		list.set(4,  "오마이걸 덮어쓰기");
+		list.set(4, "오마이걸 덮어쓰기");
 		for(Object obj : list) {
 			System.out.println(obj + " ");
 		}

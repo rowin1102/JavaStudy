@@ -27,6 +27,7 @@ class OrangeBox {
 	public Orange pullOut() {
 		return item;
 	}
+	
 }
 
 // 과일상자 : Object기반으로 모든 과일(인스턴스)을 저장할 수 있는 상자
@@ -90,7 +91,6 @@ public class Ex01GenericBasic {
 		FruitBox fBox2 = new FruitBox("당도가 30인 오렌지");
 		Orange orange4 = (Orange)fBox2.pullOut(); // 런타임 에러 발생
 		orange4.showInfo();
-		
 		
 	}
 	
