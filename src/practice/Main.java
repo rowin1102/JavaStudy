@@ -10,23 +10,14 @@ public class Main {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int length = Integer.parseInt(br.readLine());
 		String[] input = br.readLine().split(" ");
-		int maxValue = 0;
-		int minValue = 0;
+		int strLength = input.length;
 		
-		for(int i=0; i<length; i++) {
-			int N = Integer.parseInt(input[i]);
-			if(i == 0) {
-				maxValue = N;
-				minValue = N;
-			} else if(N > maxValue) {
-				maxValue = N;
-			} else if(N < minValue) {
-				minValue = N;
-			}
+		if(input[0] == " ") {
+			strLength -= 1;
 		}
-		System.out.println(minValue + " " + maxValue);
+		
+		System.out.println(strLength);
 		
 	}
 	
