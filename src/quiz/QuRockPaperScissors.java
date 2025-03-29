@@ -26,7 +26,7 @@ public class QuRockPaperScissors {
 					System.out.println("잘못된 입력입니다.");
 				}
 				
-				int computer = random.nextInt(3) + 1;
+				int computer = random.nextInt(1000) % 100 + 1;
 				
 				String[] choice = {"가위", "바위", "보"};
 				System.out.println("사용자 : " + choice[my-1] + ", 컴퓨터 : " + choice[computer-1]);
