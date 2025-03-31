@@ -8,7 +8,7 @@ import common.Student;
 public class QuArrayList {
 
 	public static void main(String[] args) {
-			
+		
 		LinkedList<Student> list = new LinkedList<Student>();
 		
 		Student st1 = new Student("가길동", 10, "2018");
