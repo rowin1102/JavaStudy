@@ -1,4 +1,4 @@
-package ex19tgread;
+package ex19thread;
 
 /*
  	쓰레드의 우선순위

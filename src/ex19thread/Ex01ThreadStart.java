@@ -1,4 +1,4 @@
-package ex19tgread;
+package ex19thread;
 
 /*
  	Thread(쓰레드)
