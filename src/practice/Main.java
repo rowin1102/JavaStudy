@@ -10,7 +10,12 @@ public class Main {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
+		int num = Integer.parseInt(br.readLine());
 		
+		for(int i=0; i<num; i++) {
+			String[] OX = br.readLine().split("");
+			
+		}
 		
 	}
 	
