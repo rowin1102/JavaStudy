@@ -10,13 +10,25 @@ public class Main {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int num = Integer.parseInt(br.readLine());
+		int N = Integer.parseInt(br.readLine());
+		int result = 0;
 		
-		for(int i=0; i<num; i++) {
-			String[] OX = br.readLine().split("");
+		for(int i=0; i<N; i++) {
+			int number = i;
+			int sum = 0;
 			
+			while(number != 0) {
+				sum += number % 10;
+				number /= 10;
+			}
+			
+			if(sum + i == N) {
+				result = i;
+				break;
+			}
 		}
 		
+		System.out.println(result);
 	}
 	
 }
