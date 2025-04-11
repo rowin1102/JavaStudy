@@ -11,24 +11,35 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int N = Integer.parseInt(br.readLine());
-		int result = 0;
 		
-		for(int i=0; i<N; i++) {
-			int number = i;
-			int sum = 0;
+		int num1 = 2;
+		int num2 = 7;
+		int cnt = 1;
+		
+		while(true) {
 			
-			while(number != 0) {
-				sum += number % 10;
-				number /= 10;
+			for(int i=1; i<N; i++) {
+				if(N == 1) break;
+				
+				if(!(N >= num1 && N <= num2)) {
+					cnt++;
+				} else if(N >= num1 && N <= num2) {
+					cnt++;
+					break;
+				}
+				
+				num1 += i * 6;
+				if(i == 1) {
+					num2 = 19;
+				} else {
+					num2 += i * 6;
+				}
+				
 			}
-			
-			if(sum + i == N) {
-				result = i;
-				break;
-			}
+			System.out.println(cnt);
+			break;
 		}
 		
-		System.out.println(result);
 	}
 	
 }
