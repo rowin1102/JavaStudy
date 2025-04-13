@@ -9,7 +9,10 @@ public interface IConnect {
 	
 	// 멤버상수 : 오라클드라이버, 커넥션URL 선언
 	String ORACLE_DRIVER = "oracle.jdbc.OracleDriver";
-	String ORACLE_URL = "jdbc:oracle:thin:@localhost:1521:xe";
+//	String ORACLE_URL = "jdbc:oracle:thin:@localhost:1521:xe";
+	String ORACLE_URL = "jdbc:oracle:thin:@localhost:1521/XEPDB1";
+
+	
 	
 	// 멤버메서드
 	void dbExecute(); // 쿼리문 실행
